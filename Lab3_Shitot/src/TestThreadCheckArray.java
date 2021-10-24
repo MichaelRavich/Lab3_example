@@ -11,10 +11,10 @@ public class TestThreadCheckArray {
 			System.out.println("Enter numbers for array");
 			
 			for (int index = 0; index < num; index++) 
-				array.set(index, input.nextInt());
+				array.add(index, input.nextInt());
 			
 			System.out.println("Enter number");
-			array.add(input.nextInt());
+			num = input.nextInt();
 			
 			SharedData sd = new SharedData(array, num);
 			
